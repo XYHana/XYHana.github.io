@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Aviso de Normas para Residentes</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<!-- mi css -->
+	<link rel="stylesheet" href="./css/miEstilo.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="./img/portal.png">
+				<h1 id="titulo" style="font-size:80px;">Aviso de Normas para Residentes</h1>
+			</section>
+			<section data-background-color="rgb(248, 244, 225)">
+				<h2>¡Bienvenidos!</h2>
+				<video  data-autoplay src="./video/intro.mp4"></video>
+			</section>
+			<section data-background-image="./img/fondo.jpg">
+				<h3>Corte de electricidad semanal</h3>
+				<section>
+					<p>Debido al envejecimiento del sistema eléctrico, habrá un breve <span class="red">corte de electricidad</span> todos los viernes por la noche de <u>10:00 a 10:30</u>.</p>
+					<audio data-autoplay src="./audio/electricidad.mp3"></audio>
+				</section>
+				<section>
+					Después de que vuelva la electricidad, presione el interruptor principal <span class="red">tres veces seguidas</span> para restablecer la normalidad. 
+					<audio data-autoplay src="./audio/switch.mp3"></audio>
+				</section>
+				<section data-auto-animate>
+					<p>Si después de tres intentos no se restablece, por favor contacte al personal de mantenimiento. <u>Tel:612345678</u></p>
+					<p>Recuerde no presionar el interruptor una cuarta vez y no intente realizar reparaciones por su cuenta.</p>
+					<audio data-autoplay src="./audio/telefono.mp3"></audio>
+				</section>	
+				<section data-auto-animate>
+					<audio data-autoplay src="./audio/waiting.mp3"></audio>
+					<p style="font-size: 60px; color: red;">Recuerde no presionar el interruptor una cuarta vez y no intente realizar reparaciones por su cuenta.</p>
+				</section>
+				<section id="volver">
+					<audio data-autoplay src="./audio/bgm.mp3"></audio>
+					<h4>Nota: </h4>
+					<p>El personal de mantenimiento no está autorizado para reparar otros objetos. Si insiste en hacerlo e intenta tocar <a href="#espejo">el espejo decorativo</a> en la sala de estar, <span class="red">deténgalo inmediatamente</span> y mantenga una fuente de luz artificial dirigida hacia él hasta que se retire. En la entrada suele haber una <a href="#linterna">linterna</a> disponible.</p>
+				</section>
+			</section>
+			<section data-background-image="./img/fondo.jpg">
+				<h3>Muebles</h3>
+				<section id="espejo">
+					Puede cambiar la posición de cualquier mueble, pero no puede mover <a href="#volver">el espejo decorativo</a> situado en la sala de estar ni cubrirlo con objetos.
+				</section>
+				<section>
+					<div class="r-hstack">
+						<p>Por favor, revise al menos <u>una vez por semana</u> si el <a href="volver">espejo</a> está roto.</p>
+						<div class="r-stack" width="80%">
+							<audio data-autoplay src="./audio/roto.mp3"></audio>
+							<img class="fragment fade-out" data-fragment-index="0" src="./img/espejo.jpg" width="450">
+							<img class="fragment current-visible" data-fragment-index="0" src="./img/espejo2.jpg" width="450">
+							<img class="fragment" src="./img/espejo3.jpg" width="450">
+						</div>
+					</div>
+					<p width="10%">Si tiene daños considerables, <span class="red">avíseme lo antes posible</span>.</p>
+				</section>
+				<section>
+					<p>Puede tocar o mirar fijamente el <a href="#volver">espejo</a> roto por largo tiempo; no lo herirá.</p>
+					<p>Respecto a la causa de la rotura, no profundice en ello.</p>
+				</section>
+			</section>
+			<section data-background-image="./img/fondo.jpg">
+				<h3>Tobogán</h3>
+				<video  data-autoplay src="./video/tobogan.mp4"></video>
+			</section>
+			<section data-background-image="./img/fondo.jpg">
+				<h3>Seguridad</h3>
+				<section id="linterna">
+					<p>Si se siente inseguro, lleve la <a href="#volver">linterna</a> de la entrada y diríjase lo más rápido posible a la conserjería para informar de la situación y solicite que <span class="red">uno o dos guardias con brazaletes amarillos</span> lo acompañen. </p>
+					<p>El resto del personal se encargará de la investigación y <span class="red">eliminación</span>.</p>
+				</section>
+				<section>
+					Nota: Mientras esté en la conserjería, mantenga la <a href="#volver">linterna</a> en su poder y no se la entregue a nadie, <span class="red">incluso si se lo piden insistentemente</span>.
+				</section>
+			</section>
+			<section data-background-image="./img/final.gif">
+				<audio data-autoplay src="./audio/final.mp3"></audio>
+				<h3 style="font-size: 50px; color: black;">Le deseamos</h3>
+				<h3 style="font-size: 80px; color: rgb(239, 96, 30);">UNA FELIZ VIDA</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			autoPlayMedia: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
